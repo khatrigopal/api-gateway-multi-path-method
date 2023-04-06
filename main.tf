@@ -28,3 +28,4 @@ module "example_api_gateway" {
       authorization = "NONE"
     }
   }
+}
