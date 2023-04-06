@@ -10,7 +10,7 @@ variable "description" {
 
 variable "resources" {
   type        = map(object({
-    parent_id = string
+    #parent_id = string
     #resource_name = string
     path_part = string
   }))
