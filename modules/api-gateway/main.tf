@@ -8,7 +8,7 @@ resource "aws_api_gateway_resource" "example_resource" {
 
   rest_api_id = aws_api_gateway_rest_api.example_api.id
   #parent_id   = each.value.parent_id
-  parent_id = aws_api_gateway_rest_api.[each.value.resource_name].id
+  parent_id = aws_api_gateway_rest_api.resource[each.value.resource_name].id
   path_part   = each.value.path_part
 }
 
